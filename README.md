@@ -429,7 +429,7 @@ Although somewhat limited, this concept enables deterministic and reliable data 
 
 Branch: `8-write-controller/task`
 
-Write a controller for *SOLO-12* robot that takes joint displacements as input and updates new joint positions for it.
+Use [Writing a new controller manuel](https://control.ros.org/master/doc/ros2_controllers/doc/writing_new_controller.html) to implement a controller for *SOLO-12* robot that takes joint displacements as input and updates new joint positions for it.
 
 1. Add files for controller names `DisplacementController` into `controlko_controllers` package.
 2. During implementation of hardware interface take care about following details:
@@ -444,7 +444,6 @@ Write a controller for *SOLO-12* robot that takes joint displacements as input a
 
    - Check definition of [`JointJog` message](https://github.com/ros-controls/control_msgs/blob/galactic-devel/control_msgs/msg/JointJog.msg)
    - alternatively use CLI command: `ros2 interface show control_msgs/msg/JointJog`
-   - use [Writing a new controller manuel](https://control.ros.org/master/doc/ros2_controllers/doc/writing_new_controller.html) to implement the controller
 
 
 **TIPP**: `RosTeamWS` tool has some scripts that can help you to solve this task faster. Resources:
